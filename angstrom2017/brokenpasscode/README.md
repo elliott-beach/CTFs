@@ -15,7 +15,7 @@ and the hint for the problem suggests we need to brute force the key somehow.
 
 This had me stumped, but when I tried to run the apk in the Android Studio's Emulator, it gave me a signing error that
 the hash for AndroidManifest.xml doesn't match.
-Based on the problem description, it's now obvious that the value of 'com.example.guest1.passcode_actf.key'
+Based on the problem description, it's now obvious that the value of `'com.example.guest1.passcode_actf.key'`
 was modified after the apk was built, and we have to recover the original value.
 
 It turns out that Android keeps an unsigned hash of every file in `META-INF/MANIFEST.MF`.
