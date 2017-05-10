@@ -8,7 +8,7 @@ Hint: There are no repeats in the digits of the correct passcode. If you find so
 
 The first step to this problem is to unzip the apk (that is, an Android app) and decompile it with jadx.
 
-The real code is in com/example/guest1/passcode_actf/MainActity.java:
+The real code is in `com/example/guest1/passcode_actf/MainActity.java`:
 
 ![src](https://raw.githubusercontent.com/e-beach/CTFs/master/angstrom2017/brokenpasscode/MainActivity.png)
 
