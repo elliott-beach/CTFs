@@ -33,6 +33,6 @@ The catch is the *binary* version of AndroidManifest is the one that's signed, s
 a little python trickery using `struct.pack` to find the location to edit in the binary file.
 
 
-Checking the sha1 of the Manifest with every possible int spits out `8195472` in about 20 seconds ([code](https://github.com/e-beach/CTFs/blob/master/angstrom2017/brokenpasscode/passcode_soln.py)).
+Checking with every possible int spits out `8195472` in about 20 seconds ([code](https://github.com/e-beach/CTFs/blob/master/angstrom2017/brokenpasscode/passcode_soln.py)).
 
 
