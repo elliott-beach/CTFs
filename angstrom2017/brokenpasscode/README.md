@@ -13,11 +13,12 @@ The real code is in `com/example/guest1/passcode_actf/MainActity.java`:
 ![src](https://raw.githubusercontent.com/e-beach/CTFs/master/angstrom2017/brokenpasscode/MainActivity.png)
 
 We can see that the key is read from a MetaData object property `"com.example.guest1.passcode_actf.key"`.
-
 Running `grep -rin 'com.example.guest1.passcode_actf.key'` from the root directory,
 I discover the content is `AndroidManifest.xml`:
 
 ![xml](https://raw.githubusercontent.com/e-beach/CTFs/master/angstrom2017/brokenpasscode/AndroidManifest.png)
+
+
 It looks the answer is `9999999`, but this flag doesn't work,
 and the hint for the problem suggests we need to brute force the key somehow.
 
