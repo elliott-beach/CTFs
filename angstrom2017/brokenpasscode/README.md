@@ -19,7 +19,7 @@ I discover the content is in the decompilied version of `AndroidManifest.xml`:
 ![xml](https://raw.githubusercontent.com/e-beach/CTFs/master/angstrom2017/brokenpasscode/AndroidManifest.png)
 
 
-It looks the answer is `9999999`, but this flag doesn't work,
+It looks like the answer is `9999999`, but this flag doesn't work,
 and the hint for the problem suggests we need to brute force the key somehow.
 
 This had me stumped, so I tried to run the apk in Android Studio's emulator.
