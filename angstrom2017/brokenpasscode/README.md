@@ -14,7 +14,7 @@ The real code is in`com/example/guest1/passcode_actf/MainActity.java`:
 
 We can see that the key is read from a MetaData object property `"com.example.guest1.passcode_actf.key"`.
 Running `grep -rin 'com.example.guest1.passcode_actf.key'` from the root directory,
-I discover the content is in the decompilied version of `AndroidManifest.xml`:
+I discover the content is in the decompiled version of `AndroidManifest.xml`:
 
 ![xml](https://raw.githubusercontent.com/e-beach/CTFs/master/angstrom2017/brokenpasscode/AndroidManifest.png)
 
