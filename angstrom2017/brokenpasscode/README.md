@@ -22,7 +22,7 @@ I discover the content is `AndroidManifest.xml`:
 It looks the answer is `9999999`, but this flag doesn't work,
 and the hint for the problem suggests we need to brute force the key somehow.
 
-This had me stumped, so I tried to run the apk in the Android Studio's Emulator.
+This had me stumped, so I tried to run the apk in Android Studio's emulator.
 This gave me a signing error that the signature for AndroidManifest.xml is incorrect.
 Based on this error and the problem description, it's now obvious that the value of `'com.example.guest1.passcode_actf.key'`
 was modified after the apk was built, and we have to recover the original value.
