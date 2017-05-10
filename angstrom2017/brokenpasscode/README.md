@@ -27,7 +27,7 @@ This gave me a signing error that the signature for AndroidManifest.xml is incor
 Based on this error and the problem description, it's now obvious that the value of `'com.example.guest1.passcode_actf.key'`
 was modified after the apk was built, and we have to recover the original value.
 
-It turns out that Android keeps a SHA-1 hash of every file in `META-INF/MANIFEST.MF`.
+After poking around a little, I discover that signed apps have a SHA-1 hash of every file in `META-INF/MANIFEST.MF`.
 Knowing the hash, we can guess values for the key until we find a version of AndroidManifest which matches the original hash.
 We know the key is an integer, probably less than `999999`, with no 0s or repeats.
 The catch is the *binary* version of AndroidManifest is the one that's signed, so we require
