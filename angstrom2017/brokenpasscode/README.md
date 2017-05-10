@@ -1,3 +1,11 @@
+# Broken Passcode
+
+Description: My friend was holding his passcode checker tool, but he was too busy looking at his screen and he tripped! Now the passcode has fallen out of the code and out of his brain. See if you can recover [it](https://angstromctf.com/static/forensics/broken_passcode/brokenpasscode.apk).
+
+Hint: There are no repeats in the digits of the correct passcode. If you find something that has repeats, maybe that's becuase my friend dropped it... also he suddenly had an epiphany and remembered that he hates 0s, and his passcode doesn't have any...
+
+### Solution
+
 The first step to this problem is to unzip the apk and decompile it with jadx.
 
 The real code is in com/example/guest1/passcode_actf/MainActity.java:
