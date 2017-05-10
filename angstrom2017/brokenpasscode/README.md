@@ -8,13 +8,13 @@ Hint: There are no repeats in the digits of the correct passcode. If you find so
 
 The first step to this problem is to unzip the apk (that is, an Android app) and decompile it with jadx.
 
-The real code is in `com/example/guest1/passcode_actf/MainActity.java`:
+The real code is in`com/example/guest1/passcode_actf/MainActity.java`:
 
 ![src](https://raw.githubusercontent.com/e-beach/CTFs/master/angstrom2017/brokenpasscode/MainActivity.png)
 
 We can see that the key is read from a MetaData object property `"com.example.guest1.passcode_actf.key"`.
 Running `grep -rin 'com.example.guest1.passcode_actf.key'` from the root directory,
-I discover the content is `AndroidManifest.xml`:
+I discover the content is in the decompilied version of `AndroidManifest.xml`:
 
 ![xml](https://raw.githubusercontent.com/e-beach/CTFs/master/angstrom2017/brokenpasscode/AndroidManifest.png)
 
